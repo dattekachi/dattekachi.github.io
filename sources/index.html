@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <title>Project Demo</title>
+</head>
+
+<body>
+
+    <h2>Dự án ESP32 Demo</h2>
+
+    <p>
+        <a href="#" id="downloadCode">
+            Tải source code
+        </a>
+    </p>
+
+    <script>
+        // ===== CẤU HÌNH =====
+        const AFFILIATE_URL = "https://ambilightled.com";
+        const REAL_DOWNLOAD_URL = "https://github.com/user/repo/archive/refs/heads/main.zip";
+        const STORAGE_KEY = "aff_opened_esp32_demo";
+        // ====================
+
+        document.getElementById("downloadCode").addEventListener("click", function (e) {
+            e.preventDefault();
+
+            // Kiểm tra đã mở affiliate chưa
+            const opened = localStorage.getItem(STORAGE_KEY);
+
+            if (!opened) {
+                // Mở affiliate 1 lần duy nhất
+                window.open(AFFILIATE_URL, "_blank", "noopener");
+                localStorage.setItem(STORAGE_KEY, "1");
+            }
+
+            // Luôn cho tải code
+            window.location.href = REAL_DOWNLOAD_URL;
+        });
+    </script>
+
+</body>
+
+</html>
