@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="page-title">Bài viết</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/post.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="../index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i>
+            Trang chủ
+        </a>
+    </nav>
+
+    <article class="post-container">
+        <div class="post-header">
+            <h1 id="post-title"></h1>
+            <div class="post-meta">
+                <span><i class="far fa-calendar"></i> <span id="post-date"></span></span>
+                <span><i class="fas fa-user"></i> <span id="post-author"></span></span>
+            </div>
+        </div>
+
+        <div id="post-content" class="post-content">
+            <!-- Content will be loaded here -->
+        </div>
+    </article>
+
+    <footer class="post-footer">
+        <p>Made with <i class="fas fa-heart"></i> © <span id="year"></span> NTDatMaker</p>
+    </footer>
+
+    <script src="../scripts/common.js"></script>
+    <script src="../scripts/post.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+{
+  "id": "post-tram-thoi-tiet",
+  "title": "Chia sẻ source code đồng hồ, trạm thời tiết mini với ESP8266",
+  "image": "posts/img/post-tram-thoi-tiet-2.jpg",
+  "date": "2025-12-20",
+  "author": "Nguyễn Thành Đạt",
+  "content": [
+    {
+      "type": "text",
+      "value": "Với module ESP8266, bạn có thể dễ dàng xây dựng một đồng hồ và trạm thời tiết mini để theo dõi nhiệt độ, độ ẩm và các thông số môi trường khác."
+    },
+    {
+      "type": "heading",
+      "value": "Linh kiện chính (click vào để mua)"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "Module ESP8266 Wemos D1 Mini",
+          "link": "https://shopee.vn"
+        },
+        {
+          "text": "Màn hình TFT LCD 1.69inch",
+          "link": "https://shopee.vn"
+        },
+        "Dây điện và các linh kiện khác"
+      ]
+    },
+    {
+      "type": "heading",
+      "value": "Mô tả chi tiết"
+    },
+    {
+      "type": "text",
+      "value": "Code mình viết trên VSCode dùng PlatformIO Extension. Mình đã chỉnh sửa và custom lại từ code gốc Arduino."
+    },
+    {
+      "type": "image",
+      "src": [
+        "posts/img/post-tram-thoi-tiet-1.jpg",
+        "posts/img/post-tram-thoi-tiet-2.jpg"
+      ],
+      "caption": [
+        "Code gốc Arduino",
+        "Code custom lại trên PlatformIO"
+      ]
+    },
+    {
+      "type": "heading",
+      "value": "Link tải"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "Code custom trên PlatformIO",
+          "link": "files/smalldesktopdisplay-main.zip"
+        }
+      ]
+    }
+  ]
+}

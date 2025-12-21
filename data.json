@@ -1,0 +1,12 @@
+{
+    "products": [
+        {
+            "name": "Đồng hồ, trạm thời tiết mini",
+            "image": "products/img/weather-station.jpg",
+            "link": "https://s.shopee.vn/7plxuaysmQ"
+        }
+    ],
+    "posts": [
+        "post-tram-thoi-tiet"
+    ]
+}

@@ -1,0 +1,191 @@
+/* Post page specific styles */
+
+.navbar {
+    padding: 16px 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+    color: #4facfe;
+}
+
+.post-container {
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.post-header {
+    margin-bottom: 40px;
+}
+
+#post-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+.post-meta {
+    display: flex;
+    gap: 24px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.post-meta i {
+    margin-right: 6px;
+    color: #4facfe;
+}
+
+.post-content {
+    line-height: 1.8;
+}
+
+.post-content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.post-content h2 {
+    font-size: 28px;
+    margin: 32px 0 16px;
+    color: #4facfe;
+}
+
+.post-content h3 {
+    font-size: 22px;
+    margin: 24px 0 12px;
+}
+
+.post-content ul {
+    margin: 16px 0;
+    padding-left: 24px;
+}
+
+.post-content li {
+    margin-bottom: 8px;
+}
+
+.post-content .affiliate-link {
+    color: #4facfe;
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(79, 172, 254, 0.5);
+    transition: all 0.3s ease;
+}
+
+.post-content .affiliate-link:hover {
+    color: #fff;
+    border-bottom-color: #4facfe;
+    border-bottom-style: solid;
+}
+
+.post-content pre {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 16px;
+    overflow-x: auto;
+    margin: 20px 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.post-content code {
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.post-image-container {
+    margin: 24px 0;
+    text-align: center;
+}
+
+.post-content-image {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.images-grid {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.images-grid .image-wrapper {
+    flex: 1 1 calc(50% - 12px);
+    max-width: calc(50% - 12px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images-grid .post-content-image {
+    max-width: 280px;
+}
+
+.image-caption {
+    margin-top: 8px;
+    font-size: 14px;
+    font-style: italic;
+    opacity: 0.8;
+    color: #a8edea;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .images-grid {
+        gap: 12px;
+    }
+    
+    .images-grid .image-wrapper {
+        flex: 0 1 calc(50% - 6px);
+        min-width: 140px;
+    }
+}
+
+.post-image-container figcaption {
+    margin-top: 12px;
+    font-size: 14px;
+    font-style: italic;
+    opacity: 0.8;
+    color: #a8edea;
+}
+
+.post-footer {
+    text-align: center;
+    padding: 40px 20px;
+    opacity: 0.6;
+    font-size: 14px;
+}
+
+.post-footer i {
+    color: #ff6b6b;
+    animation: pulse 1.5s ease infinite;
+}
+
+@media (max-width: 768px) {
+    .post-container {
+        margin: 24px auto;
+    }
+
+    #post-title {
+        font-size: 28px;
+    }
+
+    .post-content h2 {
+        font-size: 24px;
+    }
+}

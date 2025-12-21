@@ -1,13 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 
 <head>
-    <meta charset="utf-8">
-    <title>My Projects</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bio | Nguyễn Thành Đạt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/home.css">
 </head>
 
 <body>
-    <h1>Hello GitHub Pages</h1>
+    <div class="card">
+        <div class="avatar-container">
+            <div class="avatar-ring"></div>
+            <img src="/img/avatar.jpg" alt="Avatar" class="avatar" />
+        </div>
+
+        <h1>Nguyễn Thành Đạt</h1>
+        <p class="subtitle">Điện tử & lập trình</p>
+        
+        <div class="tags">
+            <span class="tag">Espressif</span>
+            <span class="tag">Arduino</span>
+            <span class="tag">Coding</span>
+            <span class="tag">DIY</span>
+        </div>
+
+        <!-- <div class="links">
+            <a href="#" onclick="openLink('https://www.tiktok.com')">
+                <i class="fab fa-tiktok"></i>
+                <span>TikTok</span>
+            </a>
+            <a href="#" onclick="openLink('https://github.com')">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
+            <a href="#" onclick="openLink('https://youtube.com')">
+                <i class="fab fa-youtube"></i>
+                <span>YouTube</span>
+            </a>
+        </div>
+
+        <div class="social-stats">
+            <div class="stat">
+                <div class="stat-number">1K+</div>
+                <div class="stat-label">Followers</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">100+</div>
+                <div class="stat-label">Videos</div>
+            </div>
+        </div> -->
+
+        <!-- Sản phẩm Affiliate -->
+        <div class="section">
+            <h2 class="section-title">
+                <i class="fas fa-shopping-bag"></i>
+                Sản phẩm đề xuất
+            </h2>
+            <div class="products-grid" id="products-container">
+                <!-- Products will be loaded from data.json -->
+            </div>
+        </div>
+
+        <!-- Bài viết -->
+        <div class="section">
+            <h2 class="section-title">
+                <i class="fas fa-newspaper"></i>
+                Bài viết chia sẻ
+            </h2>
+            <div class="posts-list" id="posts-container">
+                <!-- Posts will be loaded from data files -->
+            </div>
+        </div>
+
+        <footer>Made with <i class="fas fa-heart"></i> © <span id="year"></span> NTDatMaker</footer>
+    </div>
+
+    <script src="scripts/common.js"></script>
+    <script src="scripts/home.js"></script>
 </body>
 
 </html>
