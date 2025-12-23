@@ -41,7 +41,7 @@ body {
     min-height: 100vh;
     background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1a1a2e);
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    background-position: 0% 50%;
     color: #fff;
     position: relative;
     overflow-x: hidden;
@@ -57,7 +57,6 @@ body::before {
     height: 100%;
     background: radial-gradient(circle, rgba(255,255,255,0.03) 1px, transparent 1px);
     background-size: 50px 50px;
-    animation: float 20s ease-in-out infinite;
     pointer-events: none;
 }
 
