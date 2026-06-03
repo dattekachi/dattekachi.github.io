@@ -1,13 +1,13 @@
 {
   "id": "post-tram-thoi-tiet",
   "title": "Chia sẻ source code đồng hồ, trạm thời tiết mini với ESP8266",
-  "image": "posts/img/post-tram-thoi-tiet-2.jpg",
+  "image": "posts/img/post-tram-thoi-tiet-2.webp",
   "date": "2025-12-20",
   "author": "Nguyễn Thành Đạt",
   "content": [
     {
       "type": "text",
-      "value": "Với module ESP8266, bạn có thể dễ dàng xây dựng một đồng hồ và trạm thời tiết mini để theo dõi nhiệt độ, độ ẩm và các thông số môi trường khác."
+      "value": "Với module ESP8266 và màn hình TFT LCD, bạn có thể dễ dàng xây dựng một đồng hồ, trạm thời tiết mini để theo dõi thời gian, nhiệt độ, độ ẩm và các thông số môi trường khác."
     },
     {
       "type": "heading",
@@ -29,21 +29,38 @@
     },
     {
       "type": "heading",
-      "value": "Mô tả chi tiết"
+      "value": "Hướng dẫn chi tiết"
     },
     {
       "type": "text",
-      "value": "Code mình viết trên VSCode dùng PlatformIO Extension. Mình đã chỉnh sửa và custom lại từ code gốc Arduino."
+      "value": "Cách nối dây giữa màn hình TFT LCD và ESP8266:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "VCC  -> 3.3V (hoặc 5V)",
+        "GND  -> GND",
+        "SCL (SCK)  -> D5 (Chân Clock SPI)",
+        "SDA (MOSI) -> D7 (Chân Data SPI)",
+        "RES (RST)  -> D4",
+        "DC (RS)    -> D3",
+        "CS         -> D8",
+        "BLK (LED)  -> D1 (Điều khiển độ sáng)"
+      ]
+    },
+    {
+      "type": "text",
+      "value": "Code mình viết trên VSCode dùng PlatformIO Extension. Mình đã chỉnh sửa lại từ code gốc Arduino sưu tầm được trên mạng. Link tải mình để phía dưới!"
     },
     {
       "type": "image",
       "src": [
-        "posts/img/post-tram-thoi-tiet-1.jpg",
-        "posts/img/post-tram-thoi-tiet-2.jpg"
+        "posts/img/post-tram-thoi-tiet-1.webp",
+        "posts/img/post-tram-thoi-tiet-2.webp"
       ],
       "caption": [
         "Code gốc Arduino",
-        "Code custom lại trên PlatformIO"
+        "Code chỉnh sửa lại (PlatformIO)"
       ]
     },
     {
@@ -54,7 +71,7 @@
       "type": "list",
       "items": [
         {
-          "text": "Code custom trên PlatformIO",
+          "text": "Code trạm thời tiết ESP8266 (PlatformIO)",
           "link": "https://github.com/dattekachi/dattekachi.github.io/releases/download/files-t12-2025/smalldesktopdisplay-main.zip"
         }
       ]

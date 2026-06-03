@@ -42,6 +42,7 @@ body {
     background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1a1a2e);
     background-size: 400% 400%;
     background-position: 0% 50%;
+    background-attachment: fixed;
     color: #fff;
     position: relative;
     overflow-x: hidden;
@@ -64,7 +65,7 @@ body::before {
 .card,
 .post-container {
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     position: relative;
     z-index: 1;
 }
@@ -73,6 +74,5 @@ body::before {
 .card,
 .navbar {
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
